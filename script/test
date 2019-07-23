@@ -1,3 +1,2 @@
 #!/bin/sh
-chmod +x script/test
 ./node_modules/.bin/mocha --exit ./test/test.js
