@@ -1,0 +1,26 @@
+{
+  "name": "node-api-tics",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daniel-Sarmiento/node-api-tics.git"
+  },
+  "author": "Daniel Sarmiento",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Daniel-Sarmiento/node-api-tics/issues"
+  },
+  "homepage": "https://github.com/Daniel-Sarmiento/node-api-tics#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "supertest": "^4.0.2",
+    "mocha": "^6.2.0"
+  }
+}
