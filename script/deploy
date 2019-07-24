@@ -3,6 +3,7 @@ ssh danielsarmiento@159.65.217.63 <<EOF
  cd ~/node-app-tics
  git pull
  npm install --production
+ npm configAngular
  pm2 restart all
  exit
 EOF
