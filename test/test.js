@@ -3,8 +3,8 @@ let app = require('../index.js');
 
 describe('GET /', ()=>{
 
- it('respond with Hola mundo', (done)=> {
- request(app).get('/').expect('Hola mundo', done);
+ it('respuesta: Deploy automático con Jenkins', (done)=> {
+ request(app).get('/').expect('Deploy automático con Jenkins', done);
  });
 
 });
