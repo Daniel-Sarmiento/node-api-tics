@@ -1,0 +1,39 @@
+<div class="container">
+  <h2>Productos</h2>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Eliminar</th>
+        <th>Editar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let producto of productos;">
+        <td> {{ producto.id }} </td>
+        <td> {{ producto.nombre }} </td>
+        <td> {{ producto.precio }} </td>
+        <td> <button (click)="deleteProducto(producto.id)" class="btn btn-danger">Eliminar</button> </td>
+        <td> <button [routerLink]="['/producto-editar', producto.id]" class="btn btn-warning">Editar</button> </td>
+      </tr>
+    </tbody>
+  </table>
+  <hr>
+  <h3>Agregar Producto</h3>
+  <br>
+    <div class="col-md-4">
+        <form [formGroup]="formAgregarProducto">
+            <div class="form-group">
+              <input type="text" formControlName="nombre" class="form-control" id="exampleInputNombre" placeholder="Nombre">
+            </div>
+            <div class="form-group">
+              <input type="number" formControlName="precio" class="form-control" id="inputPrecio" placeholder="Precio">
+            </div>
+            <button (click)="addProducto()" class="btn btn-primary">Agregar</button>
+        </form>
+    </div>
+</div>
+<!-- .container -->
