@@ -1,6 +1,6 @@
 {
   "name": "node-api-tics",
-  "version": "0.0.14",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
