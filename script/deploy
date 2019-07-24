@@ -3,7 +3,9 @@ ssh danielsarmiento@159.65.217.63 <<EOF
  cd ~/node-app-tics
  git pull
  npm install --production
- npm run configAngular
+ cd ~/node-app-tics/angularfronted
+ npm install --production
+ ng build
  pm2 restart all
  exit
 EOF
