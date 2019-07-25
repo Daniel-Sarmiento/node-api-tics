@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.static(path.join (__dirname, '/angularfronted/dist/angularfronted')));
 
 app.get('/test', (req,res)=>{
-    res.send('Hola Mundo');
+    res.send('URL Test');
 })
 
 app.get('/', function(req, res) {
